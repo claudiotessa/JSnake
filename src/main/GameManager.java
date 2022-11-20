@@ -102,12 +102,12 @@ public class GameManager extends JPanel implements Runnable {
     }
 
     public static void resetGame() {
-        coinPosition = generateCoinPosition(player.getPositionsToArray());
-        coin.setPosition(coinPosition);
         difficulty = 2;
         score = 1;
         player = new Player();
         input.setDefaultDirection();
+        coinPosition = generateCoinPosition(player.getPositionsToArray());
+        coin.setPosition(coinPosition);
     }
 
 }
